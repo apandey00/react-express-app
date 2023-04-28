@@ -8,12 +8,12 @@ app.get('/', (req, res) => {
 })
 
 // MasterDetail Page Endpoint
-app.get('/api/masterdetail', (req, res) => {
+app.get('/masterdetail', (req, res) => {
   res.json(sampleData.textAssets)
 })
 
 // Grid Page Endpoint
-app.get('/api/grid', (req, res) => {
+app.get('/grid', (req, res) => {
   res.json(sampleData.textAssets)
 })
 

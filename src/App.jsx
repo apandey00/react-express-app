@@ -18,7 +18,6 @@ class App extends Component {
       <React.Fragment>
         <NavBar />
         <Switch>
-          <Redirect exact path = "/" to = "/home" />
           <Route path = "/home" component = { home } />
           <Route path = "/portfolio" component = { portfolio } />
           <Route path = "/detail" component = { detail } />
