@@ -1,4 +1,5 @@
-﻿const CONSTANTS = {}
+﻿// const BASEURL = 'http://localhost:3001'
+const CONSTANTS = {}
 
 CONSTANTS.ERROR_MESSAGE = {}
 
@@ -8,8 +9,12 @@ CONSTANTS.ERROR_MESSAGE.MASTERDETAIL_GET = 'Request to get master detail text fa
 
 CONSTANTS.ENDPOINT = {}
 
-CONSTANTS.ENDPOINT.GRID = '/api/grid'
+CONSTANTS.ENDPOINT.GRID = '/grid'
 
-CONSTANTS.ENDPOINT.MASTERDETAIL = '/api/masterdetail'
+CONSTANTS.ENDPOINT.MASTERDETAIL = '/masterdetail'
+
+CONSTANTS.ENDPOINT.LOGIN = '/login'
+
+CONSTANTS.ENDPOINT.LOGOUT = '/logout'
 
 export default CONSTANTS

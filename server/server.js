@@ -17,6 +17,24 @@ app.get('/grid', (req, res) => {
   res.json(sampleData.textAssets)
 })
 
+app.post('/login', (req, res) => {
+  const { userName, userPassword } = req.body;
+  if (userName && userPassword && userName == 'nirav@gmail.com' && password == '12345')
+    res.status(401).send({
+      user_name: "",
+      password: "",
+      success: true,
+      message: "Login Successfull"
+    })
+  else
+    res.status(401).send({
+      user_name: "",
+      password: "",
+      success: false,
+      message: "Not a valid user."
+    })
+})
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
